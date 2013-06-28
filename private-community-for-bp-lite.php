@@ -5,15 +5,15 @@ if ( !function_exists( 'bp_core_install' ) ) {
 	if ( is_plugin_active( 'buddypress/bp-loader.php' ) ) {
 		require_once ( WP_PLUGIN_DIR . '/buddypress/bp-loader.php' );
 	} else {
-		add_action( 'admin_notices', 'private_community_for_bp_install_buddypress_notice' );
+		add_action( 'admin_notices', 'private_community_for_bp_lite_install_buddypress_notice' );
 		return;
 	}
 }
 
 
-function private_community_for_bp_install_buddypress_notice() {
+function private_community_for_bp_lite_install_buddypress_notice() {
 	echo '<div id="message" class="error fade"><p style="line-height: 150%">';
-	_e('<strong>Private Community For BP</strong></a> requires the BuddyPress plugin to work. Please <a href="http://buddypress.org/download">install BuddyPress</a> first, or <a href="plugins.php">deactivate Private Community For BP</a>.');
+	_e('<strong>Private Community For BP Lite</strong></a> requires the BuddyPress plugin to work. Please <a href="http://buddypress.org/download">install BuddyPress</a> first, or <a href="plugins.php">deactivate Private Community For BP Lite</a>.');
 	echo '</p></div>';
 }
 
