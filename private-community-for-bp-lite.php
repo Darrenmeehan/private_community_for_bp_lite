@@ -62,7 +62,7 @@ function cut_nonreg_visitor_rss_feed() {
 add_action('init', 'cut_nonreg_visitor_rss_feed'); 
 /* End Prevent RSS Feeds */
 
-/////////////////////////////// Dashboard Settings ///////////////////////////////////////
+/////////////////////////////// Dashboard Settings //////////////////////////////////
 /*
  * bphelp_pcfbp_add_admin_menu()
  */

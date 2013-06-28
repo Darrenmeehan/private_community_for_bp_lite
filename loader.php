@@ -10,7 +10,7 @@ Requires at least: WordPress 3.2.1 / BuddyPress 1.5.1
 Tested up to: WordPress 3.6 beta3 / BuddyPress 1.8 beta1
 License: GNU/GPL 2
 Author: @bphelp
-Author URI: http://www.wordpress.com
+Author URI: http://bphelpblog.wordpress.com/
 */
 
 function private_community_for_bp_lite_init() {

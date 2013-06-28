@@ -12,12 +12,16 @@ of the pages you set.
 == Description ==
 
 Makes BP pages private and only accessable to logged in users with the exception
-of the pages you set in Dashboard/Settings/PrivateCommunityBP. Allows 2 unblocked
-pages. Blocks RSS feeds as well. Premium version coming soon.
+of the pages you set in Dashboard/Settings/PrivateCommunityBP. The Lite version
+only allows 2 unblocked pages. 
+Blocks RSS feeds as well. 
+
+Premium version with more options and support coming soon.
 
 == Installation ==
 
 Install via the WordPress plugin installer and activate, or do a manual upload.
+
 Go to Dashboard/Settings/PrivateCommunityBP to add unblocked pages.
 
 == Screenshots ==
@@ -35,8 +39,12 @@ A: In the Lite version you are required to use the register slug
 
 == Notes ==
 Makes BP pages private and only accessable to logged in users with the exception
-of the pages you set in Dashboard/Settings/PrivateCommunityBP. Allows 2 unblocked
-pages. Blocks RSS feeds as well. Premium version coming soon.
+of the pages you set in Dashboard/Settings/PrivateCommunityBP. The Lite version
+only allows 2 unblocked
+pages. 
+Blocks RSS feeds as well. 
+
+Premium version coming soon.
  
 == Changelog == 
 
