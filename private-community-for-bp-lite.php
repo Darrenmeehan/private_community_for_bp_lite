@@ -16,7 +16,7 @@ function bphelp_private_community(){
  
  
  // DO NOT ALTER THE CODE BELOW THIS LINE UNLESS YOU KNOW WHAT YOU ARE DOING 
- if ( !is_user_logged_in() && !bp_is_register_page() && !bp_is_activation_page() 
+ if ( !is_user_logged_in() && !bp_is_register_page() && !bp_is_activation_page() && !bp_is_front_page() 
 	&& ( $bp_unfiltered_uri[0] != $bphelp_my_unblocked_page_1 ) 
 	&& ( $bp_unfiltered_uri[0] != $bphelp_my_unblocked_page_2 ) )
 	
