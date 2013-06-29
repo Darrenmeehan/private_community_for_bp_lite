@@ -13,22 +13,16 @@ Author: @bphelp
 Author URI: http://bphelpblog.wordpress.com/
 */
 
+/*** Make sure BuddyPress is loaded ********************************/
+if ( class_exists( 'BuddyPress' ) ) {
+	add_action( 'bp_include', 'private_community_for_bp_lite_init' );
+} else {
+	add_action( 'admin_notices', 'private_community_for_bp_lite_install_buddypress_notice' );
+}
+
 function private_community_for_bp_lite_init() {
 	require( dirname( __FILE__ ) . '/private-community-for-bp-lite.php' );
 }
-add_action( 'bp_include', 'private_community_for_bp_lite_init' );
-
-/*** Make sure BuddyPress is loaded ********************************/
-if ( !function_exists( 'bp_core_install' ) ) {
-	require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
-	if ( is_plugin_active( 'buddypress/bp-loader.php' ) ) {
-		require_once ( WP_PLUGIN_DIR . '/buddypress/bp-loader.php' );
-	} else {
-		add_action( 'admin_notices', 'private_community_for_bp_lite_install_buddypress_notice' );
-		return;
-	}
-}
-
 
 function private_community_for_bp_lite_install_buddypress_notice() {
 	echo '<div id="message" class="error fade"><p style="line-height: 150%">';
