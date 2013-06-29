@@ -33,13 +33,13 @@ add_action( 'wp', 'bphelp_private_community', 3 );
   
 /* Prevent RSS Feeds */
 function cut_nonreg_visitor_rss_feed() {
-	remove_action( 'bp_actions', 'bp_activity_action_sitewide_feed', 3 );
-	remove_action( 'bp_actions', 'bp_activity_action_personal_feed', 3 );
-	remove_action( 'bp_actions', 'bp_activity_action_friends_feed', 3 );
-	remove_action( 'bp_actions', 'bp_activity_action_my_groups_feed', 3 );
-	remove_action( 'bp_actions', 'bp_activity_action_mentions_feed', 3 );
-	remove_action( 'bp_actions', 'bp_activity_action_favorites_feed', 3 );
-	remove_action( 'groups_action_group_feed', 'groups_action_group_feed', 3 );
+	remove_action( 'bp_actions', 'bp_activity_action_sitewide_feed' ,3 );
+	remove_action( 'bp_actions', 'bp_activity_action_personal_feed' ,3 );
+	remove_action( 'bp_actions', 'bp_activity_action_friends_feed'  ,3 );
+	remove_action( 'bp_actions', 'bp_activity_action_my_groups_feed',3 );
+	remove_action( 'bp_actions', 'bp_activity_action_mentions_feed' ,3 );
+	remove_action( 'bp_actions', 'bp_activity_action_favorites_feed',3 );
+	remove_action( 'groups_action_group_feed', 'groups_action_group_feed',3 );
 }
 add_action('init', 'cut_nonreg_visitor_rss_feed'); 
 /* End Prevent RSS Feeds */
@@ -104,6 +104,7 @@ function bphelp_pcfbp_admin() {
 					</td>
 				</tr>
 			</table>
+			
 			<p class="submit">
 				<input type="submit" name="submit" value="<?php _e( 'Save Settings', 'bphelp_pcfbp' ) ?>"/>
 			</p>
